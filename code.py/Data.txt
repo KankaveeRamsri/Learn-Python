@@ -1,0 +1,4 @@
+Hello,this is a first line.
+World,2nd line.
+สวัสดีครับ , บรรทัดภาษาไทย
+Python, last line.
