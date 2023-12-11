@@ -32,7 +32,6 @@ if __name__ == '__main__' :
     output = get_grade(student_score)
     print(output)
     
-
     
 
 
