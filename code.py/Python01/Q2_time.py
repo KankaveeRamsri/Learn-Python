@@ -204,4 +204,6 @@ for n in range(100,1100,100) :
     print("Process time to find minimum number #{} : {}".format(n,sum(avg_time_min) / 10))
 
     print('-' * 30)
+    
+    
 
