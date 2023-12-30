@@ -138,16 +138,16 @@ print("----------------------------")
 print("----------------------------")
 
 
-number = int(input())
-width = len(bin(number)[2:])
+# number = int(input())
+# width = len(bin(number)[2:])
 
-for i in range(1,number+1) :
-    decimal = str(i)
-    octal = oct(i).replace("0o","")
-    hexa = (hex(i).replace("0x","")).upper()
-    binary = bin(i).replace("0b","")
+# for i in range(1,number+1) :
+#     decimal = str(i)
+#     octal = oct(i).replace("0o","")
+#     hexa = (hex(i).replace("0x","")).upper()
+#     binary = bin(i).replace("0b","")
     
-    print(f"{decimal:>{width}} {octal:>{width}} {hexa:>{width}} {binary:>{width}}")
+#     print(f"{decimal:>{width}} {octal:>{width}} {hexa:>{width}} {binary:>{width}}")
     
     
 
@@ -155,6 +155,8 @@ for i in range(1,number+1) :
 # print(oct(number).replace("0o",""))
 # print((hex(number).replace("0x","")).upper())
 # print(bin(number).replace("0b",""))
+
+
 
 
 
