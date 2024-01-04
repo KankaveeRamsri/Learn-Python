@@ -1,11 +1,13 @@
-def is_Fizz_Buzz(numbers):
+def get_Fizz_Buzz(num):
     
-    for num in numbers:
-        if num % 15 == 0 :
-            print("FizzBuzz")
-        elif num % 3 == 0 :
-            print("Fizz")
-        elif num % 5 == 0 :
-            print("Buzz")
-        else :
-            return False
+    if num % 15 == 0 :
+        return "FizzBuzz"
+    elif num % 3 == 0 :
+        return "Fizz"
+    elif num % 5 == 0 :
+        return "Buzz"
+    return ""
+
+
+print(get_Fizz_Buzz(3))
+    
