@@ -8,10 +8,10 @@ class FizzBuzzListTest(unittest.TestCase):
         is_fizzbuzz = get_Fizz_Buzz(number)
         self.assertEqual(is_fizzbuzz,"")
     
-    # def test_give_5_is_buzz(self):
-    #     number = 5
-    #     is_fizzbuzz = get_Fizz_Buzz(number)
-    #     self.assertEqual(is_fizzbuzz,"Buzz")
+    def test_give_5_is_buzz(self):
+        number = 5
+        is_fizzbuzz = get_Fizz_Buzz(number)
+        self.assertEqual(is_fizzbuzz,"Buzz")
     
     def test_give_9_is_fizz(self):
         number = 9
