@@ -1,19 +1,19 @@
-class Person : 
-    def __init__(self,fname,lname):
-        self.firstname = fname
-        self.lastname = lname
+# class Person : 
+#     def __init__(self,fname,lname):
+#         self.firstname = fname
+#         self.lastname = lname
     
-    def printname(self):
-        print(self.firstname,self.lastname)
+#     def printname(self):
+#         print(self.firstname,self.lastname)
 
-p1 = Person("John","Doe")
-p1.printname()
+# p1 = Person("John","Doe")
+# p1.printname()
 
-class Student(Person):
-    pass #ถ้าไม่ต้องการเพิ่มอะไรให้ใช้ pass
+# class Student(Person):
+#     pass #ถ้าไม่ต้องการเพิ่มอะไรให้ใช้ pass
 
-x = Student("Mike","Olsen")
-x.printname()
+# x = Student("Mike","Olsen")
+# x.printname()
 
 print("------------------------------------------")
 

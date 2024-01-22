@@ -1,5 +1,4 @@
 def print_formatted(number):
-    # your code goes here
     width = len(bin(number)[2:])
     
     for i in range(1, number + 1):
@@ -11,7 +10,7 @@ def print_formatted(number):
         print("{} {} {} {}".format(decimal_format, octal_format, hexadecimal_format, binary_format))
 
 if __name__ == '__main__':
-    n = int(input())
+    n = 17
     print_formatted(n)
 
 

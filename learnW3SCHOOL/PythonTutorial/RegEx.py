@@ -1,12 +1,12 @@
 import re
 
-# txt = "The rain in Spain"
-# x = re.search("^The.*Spain$",txt)
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$",txt)
 
-# if x :
-#     print("YES! We have a match!")
-# else :
-#     print("No match")
+if x :
+    print("YES! We have a match!")
+else :
+    print("No match")
 
 print("------------------------------------------")
 
@@ -57,9 +57,9 @@ print("------------------------------------------")
 
 #Match Objects
 
-txt = "The rain in Spain"
-x = re.search(r"\bS\w+",txt)
-print(x.span())
-print(x.string)
-print(x.group())
+# txt = "The rain in Spain"
+# x = re.search(r"\bS\w+",txt)
+# print(x.span())
+# print(x.string)
+# print(x.group())
 
