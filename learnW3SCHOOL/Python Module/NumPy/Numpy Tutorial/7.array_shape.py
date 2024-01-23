@@ -1,9 +1,9 @@
 #Get the Shape of an Array 
-# import numpy as np 
+import numpy as np 
 
-# arr = np.array([[1,2,3,4],[5,6,7,8]])
+arr = np.array([[1,2,3,4],[5,6,7,8]])
 
-# print(arr.shape) #อาร์เรย์มี 2 มิติ มิติแรกมีสององค์ประกอบ มิติที่สองมี 4 องค์ประกอบ
+print(arr.shape) #อาร์เรย์มี 2 มิติ มิติแรกมีสององค์ประกอบ มิติที่สองมี 4 องค์ประกอบ
 
 print("------------------------------")
 
