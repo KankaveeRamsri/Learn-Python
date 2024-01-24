@@ -13,12 +13,12 @@ for i in data_num :
 
 print("Unique numbers is {}".format(result))
 
-even_potision = list()
+even_position = list()
 for i in range(len(data_num)) :
     if i % 2 == 0 :
-        even_potision.append(data_num[i])
+        even_position.append(data_num[i])
 
-average = sum(even_potision)/len(even_potision)
+average = sum(even_position)/len(even_position)
 print("Average number of even position in list is {:.2f}".format(average))
 
 
