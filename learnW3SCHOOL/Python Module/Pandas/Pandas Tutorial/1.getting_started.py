@@ -1,15 +1,15 @@
-#Import Pandas
+# Import Pandas
 
-# import pandas 
+import pandas 
 
-# mydataset = {
-#     'cars' : ["BMW","Volvo","Ford"],
-#     'passings' : [3,7,2]
-# }
+mydataset = {
+    'cars' : ["BMW","Volvo","Ford"],
+    'passings' : [3,7,2]
+}
 
-# myvar = pandas.DataFrame(mydataset)
+myvar = pandas.DataFrame(mydataset)
 
-# print(myvar)
+print(myvar)
 
 print("------------------------------------")
 

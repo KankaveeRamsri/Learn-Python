@@ -2,11 +2,11 @@
 
 # how many cubic meters are in one liter : (1 ลิตรมีกี่ลูกบาศก์เมตร)
 
-# from scipy import constants 
+from scipy import constants 
 
-# result = constants.liter
+result = constants.liter
 
-# print(result)
+print(result)
 
 print('---------------------------------')
 

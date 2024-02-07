@@ -6,26 +6,26 @@ print("---------------------------------------")
 
 # draw 2 plots : 
 
-# import matplotlib.pyplot as plt 
-# import numpy as np 
+import matplotlib.pyplot as plt 
+import numpy as np 
 
-# # plot 1 : 
-# x = np.array([0,1,2,3])
-# y = np.array([3,8,1,10])
+# plot 1 : 
+x = np.array([0,1,2,3])
+y = np.array([3,8,1,10])
 
-# plt.subplot(1,2,1)
-# # the figure has 1 row , 2 columns ,and this plot is the first plot.
-# plt.plot(x,y)
+plt.subplot(1,2,1) # แถวที่ 1 มีทั้งหมด 2 คอลัมน์ วางใน คอลัมน์ 1
+# the figure has 1 row , 2 columns ,and this plot is the first plot.
+plt.plot(x,y)
 
-# # plot 2 : 
-# x = np.array([0,1,2,3])
-# y = np.array([10,20,30,40])
+# plot 2 : 
+x = np.array([0,1,2,3])
+y = np.array([10,20,30,40])
 
-# plt.subplot(1,2,2)
-# # the figure has 1 row , 2 columns ,and this plot is the second plot.
-# plt.plot(x,y)
+plt.subplot(1,2,2)
+# the figure has 1 row , 2 columns ,and this plot is the second plot.
+plt.plot(x,y)
 
-# plt.show()
+plt.show()
 
 print("---------------------------------------")
 
@@ -124,27 +124,27 @@ print("---------------------------------------")
 
 print("---------------------------------------")
 
-import matplotlib.pyplot as plt 
-import numpy as np 
+# import matplotlib.pyplot as plt 
+# import numpy as np 
 
-# plot 1 : 
-x = np.array([0,1,2,3])
-y = np.array([3,8,1,10])
+# # plot 1 : 
+# x = np.array([0,1,2,3])
+# y = np.array([3,8,1,10])
 
-plt.subplot(1,2,1)
-plt.plot(x,y)
-plt.title("SALES")
+# plt.subplot(1,2,1)
+# plt.plot(x,y)
+# plt.title("SALES")
 
-# plot 2 : 
-x = np.array([0,1,2,3])
-y = np.array([10,20,30,40])
+# # plot 2 : 
+# x = np.array([0,1,2,3])
+# y = np.array([10,20,30,40])
 
-plt.subplot(1,2,2)
-plt.plot(x,y)
-plt.title("INCOME")
+# plt.subplot(1,2,2)
+# plt.plot(x,y)
+# plt.title("INCOME")
 
-plt.suptitle("MY SHOP")
-plt.show()
+# plt.suptitle("MY SHOP")
+# plt.show()
 
 print("---------------------------------------")
 
