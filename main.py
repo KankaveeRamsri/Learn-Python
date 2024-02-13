@@ -1,5 +1,14 @@
-import sympy as sym
+import numpy as np
+import matplotlib.pyplot as plt
+fname = 'scores240.txt'
+with open(fname) as fr:
+    ls = fr.read()
 
-u = sym.symbols('u')
+ldt = [float(e) for e in ls.split()]
+data = np.array(ldt)
 
-print(sym.integrate(pow(6 - 2*u,2),u))
+plt.hist(data,color='g',bins=5)
+plt.xlabel("score")
+plt.ylabel("number of students")
+plt.grid(linestyle=":",color = 'b')
+plt.show()

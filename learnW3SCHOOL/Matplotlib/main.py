@@ -124,17 +124,96 @@ print("-------------------------------")
 # plt.plot(X,C)
 # plt.show()
 
+print("-------------------------------")
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+# X = np.arange(0,5,0.1)
+# y = 2*X+10
+
+# plt.plot(X, y,color = 'g', label='y = 2x+10')
+# plt.title('Prob 3')
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.legend()
+# plt.show()
+
+print("-------------------------------")
+
+# import matplotlib.pyplot as plt 
+# import numpy as np 
+
+# Day = np.array(['Mon','Tue','Wed','Thu','Fri','Sat','Sun'])
+# Sales = np.array([510,240,405,532,625,655,600])
+
+# plt.subplot(1,2,1)
+# plt.title('Weekly Sales')
+# plt.xlabel('Day')
+# plt.ylabel('Sales')
+# plt.bar(Day, Sales, color='r')
+
+# plt.subplot(1,2,2)
+# plt.title('Weekly Sales')
+# plt.xlabel('Sales')
+# plt.ylabel('Day')
+# plt.barh(Day, Sales, color='r')
+# plt.show()
+
+print("-------------------------------")
+
+# import matplotlib.pyplot as plt 
+# import numpy as np 
+
+# data = np.array([19,99,70,35,69,93,63,42,84,43,55,20,95,50,32,38,78,36,32,9])
+
+# plt.hist(data,color='r',bins=5) # แบ่งเป็น 5 ช่วง
+# plt.show()
+
+print("-------------------------------")
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# N = np.array([10, 35, 20, 12, 25])
+# fruits = ['apple', 'banana', 'orange', 'grape', 'papaya']
+
+
+# y = [0.1,0,0.2,0,0]
+
+# plt.pie(N, labels=fruits, explode=y)
+# plt.show()
+
+print("-------------------------------")
+
+# import matplotlib.pyplot as plt 
+
+# X = [1, 1.5, -2.5, -2.8, 3.6, 2.7, 3.3, -1]
+# Y = [10, 20, 15, 25, 21, 15, 22, 18]
+
+# plt.title('Basic Graph Plotting 04; Scatter')
+# plt.ylabel('Y-Values')
+# plt.xlabel('X-Values')
+# plt.scatter(X, Y)
+# plt.show()
+
+print("-------------------------------")
+
 import matplotlib.pyplot as plt
 import numpy as np
 X = np.arange(-5,5,0.1)
-y = 2*X+5
-fx = X**2+2*X+1
-plt.plot(X, y,color = 'g', label='y = 2x+10')
-plt.plot(X, fx, label='f(x)=x^2+2x+1')
-plt.xlabel("x")
-plt.ylabel("f(x) or y")
-plt.title('Prob 1')
-plt.legend()
-plt.grid()
-plt.show()
 
+y = 2*X + 10
+fx = pow(X,2) + 2*X + 1 
+
+
+plt.subplot(2,1,1)
+plt.title("Prob 4")
+plt.plot(X,y,color = 'g',label = 'y = 2x+10')
+plt.legend()
+plt.ylabel('y')
+
+plt.subplot(2,1,2)
+plt.plot(X,fx,label = 'f(x) = x^2+2x+1')
+plt.legend()
+plt.ylabel('f(x)')
+plt.show()
