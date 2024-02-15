@@ -6,13 +6,13 @@ print("------------------------------------")
 
 # return a new Data Frame with no empty cells : 
 
-# import pandas as pd
+import pandas as pd
 
-# df = pd.read_csv('/Users/balast/Downloads/data.csv')
+df = pd.read_csv('/Users/balast/Downloads/data.csv')
 
-# new_df = df.dropna()
+new_df = df.dropna()
 
-# print(new_df.to_string())
+print(new_df.to_string())
 
 # Note: By default, the dropna() method returns a new DataFrame, and will not change the original.
 
@@ -92,15 +92,15 @@ print("------------------------------------")
 
 # calculate the MODE, and replace any empty values with it :
 
-import pandas as pd 
+# import pandas as pd 
 
-df = pd.read_csv("/Users/balast/Downloads/data.csv")
+# df = pd.read_csv("/Users/balast/Downloads/data.csv")
 
-x = df["Calories"].mode()[0]
+# x = df["Calories"].mode()[0]
 
-df["Calories"].fillna(x,inplace = True)
+# df["Calories"].fillna(x,inplace = True)
 
-print(df)
+# print(df)
 
 print("------------------------------------")
 
