@@ -485,3 +485,19 @@ print("---------------------------------")
 # student_df = pd.DataFrame(student_dict)
 # student_df['Marks'] = 0
 # print(student_df)
+
+import pandas as pd
+
+# สร้าง DataFrame ตัวอย่าง
+data = {'A': [1, 2, None, 4],
+        'B': [5, None, 7, 8],
+        'C': [9, 10, 11, 12]}
+
+df = pd.DataFrame(data)
+print(df)
+nan = df.isna().sum()
+df = df.drop(columns = nan[nan > 0.5 * len(df)].index)
+
+print(nan)
+print(len(df))
+

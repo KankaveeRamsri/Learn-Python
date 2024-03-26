@@ -72,32 +72,49 @@ print("--------------------------------------")
 
 # Inheritance
 
-class Counter:
-    def __init__(self):
-        self.v = 0
+# class Counter:
+#     def __init__(self):
+#         self.v = 0
     
-    def tick(self):
-        self.v += 1
+#     def tick(self):
+#         self.v += 1
     
 
-class ResetableCounter(Counter):
-    def reset(self):
-        self.v = 0
+# class ResetableCounter(Counter):
+#     def reset(self):
+#         self.v = 0
 
-c1 = Counter()
-c2 = ResetableCounter()
+# c1 = Counter()
+# c2 = ResetableCounter()
 
-for i in range(5):
-    c1.tick()
-print(c1.v)
+# for i in range(5):
+#     c1.tick()
+# print(c1.v)
 
-for i in range(5):
-    c2.tick()
-print(c2.v)
-c2.reset()
-print(c2.v)
+# for i in range(5):
+#     c2.tick()
+# print(c2.v)
+# c2.reset()
+# print(c2.v)
 
 
+print("--------------------------------------")
+
+class Shape:
+    def __init__(self, name):
+        self.name = name
+
+class Triangle(Shape):
+    def __init__(self, name, base, height):
+        super().__init__(name)
+        self.base = base 
+        self.height = height
+    
+    def getArea(self):
+        print(self.base * self.height * 0.5)
+
+
+    
 
 
     

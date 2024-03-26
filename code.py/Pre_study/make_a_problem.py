@@ -145,29 +145,29 @@ print("-----------------------------")
 
 print("-----------------------------")
 
-# change = int(input("Your change : "))
-# data = []
-# coin = 0
-# while change > 0 :
-#     if change == 6 :
-#         change -= 6 # 3 bath 2 coins
-#         data.extend([3,3])
-#         coin += 2
-#     elif change > 4:
-#         change -= 4
-#         data.append(4)
-#         coin +=1
-#     elif change > 3 :
-#         change -= 3
-#         data.append(3)
-#         coin += 1
-#     elif change >= 1 :
-#         change -= 1
-#         data.append(1)
-#         coin += 1
+change = int(input("Your change : "))
+data = []
+coin = 0
+while change > 0 :
+    if change == 6 :
+        change -= 6 # 3 bath 2 coins
+        data.extend([3,3])
+        coin += 2
+    elif change > 4:
+        change -= 4
+        data.append(4)
+        coin +=1
+    elif change > 3 :
+        change -= 3
+        data.append(3)
+        coin += 1
+    elif change >= 1 :
+        change -= 1
+        data.append(1)
+        coin += 1
 
-# print(data)
-# print(coin)
+print(data)
+print(coin)
 
 print("-----------------------------")
 
