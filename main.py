@@ -14,20 +14,28 @@
 
 print("------------------------------------")
 
+import string
+
 if __name__ == '__main__':
-    first_multiple_input = [int(i) for i in input().split()]
-    n = first_multiple_input[0]
-    k = first_multiple_input[1]
+    alphabet_dict = {}
     
-    bill = [int(i) for i in input().split()[:n]]
+    lowercase = string.ascii_lowercase
+    print(lowercase)
     
-    b = int(input())
+    s = str(input()).lower()
+    s = s.replace(" ","")
     
-    bill_anna = (sum(bill) - bill[k]) / 2
+    for i in lowercase:
+        alphabet_dict[i] = lowercase.count(i)
     
-    if bill_anna == b:
-        print("Bon Appetit")
-    else:
-        print(int(b-bill_anna))    
+    for string in s:
+        alphabet_dict[string] += 1 
+    
+    if any(value == 1 for value in alphabet_dict.values()):
+        print(False)
+    
+    
+             
+    
     
     
