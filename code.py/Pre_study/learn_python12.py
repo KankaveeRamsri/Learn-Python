@@ -33,10 +33,11 @@ charizard = Pokemon('Charizard', 'fire', 5, 20)
 def battle(pokemon1, pokemon2):
     while pokemon1.hp > 0 and pokemon2.hp > 0:
         attacking_pokemon = random.choice([pokemon1, pokemon2])
+        potion_pokemon = random.choice([pokemon1,pokemon2])
         
-        if random.randint(1, 100) <= 10:
-            attacking_pokemon.potion(attacking_pokemon)
-            print(f"<<< {attacking_pokemon.name} uses a potion! >>>")
+        if random.randint(1, 100) <= 50:
+            potion_pokemon.potion(potion_pokemon)
+            print(f"<<< {potion_pokemon.name} uses a potion! >>>")
             
         if attacking_pokemon == pokemon1:
             pokemon1.attack(pokemon2)

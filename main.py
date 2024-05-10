@@ -14,28 +14,24 @@
 
 print("------------------------------------")
 
-import string
+def check_number(num):
+    if num % 2 == 0:
+        return 'even'
+    else:
+        return 'odd'
 
 if __name__ == '__main__':
-    alphabet_dict = {}
+    n = [int(i) for i in input().split()]
+
+    height = n[0]
+    width = n[1]
+
+    for i in range(1,height,2):
+        mark = '.|.'
+        print((mark * i).center(width,'-'))
     
-    lowercase = string.ascii_lowercase
-    print(lowercase)
+    print(('WELCOME').center(width,'-'))
     
-    s = str(input()).lower()
-    s = s.replace(" ","")
-    
-    for i in lowercase:
-        alphabet_dict[i] = lowercase.count(i)
-    
-    for string in s:
-        alphabet_dict[string] += 1 
-    
-    if any(value == 1 for value in alphabet_dict.values()):
-        print(False)
-    
-    
-             
-    
-    
-    
+    for i in range(height-2,0,-2):
+         mark = '.|.'
+         print((mark * i).center(width, '-'))
