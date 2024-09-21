@@ -34,8 +34,6 @@ def binary_search(arr, x):
 
 if __name__ == "__main__":
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    arr = [1, 22, 33, 4, 5, 6, 7, 8, 9, 10]
-
     x = 9
     val = binary_search(arr, 0, len(arr), x)
     print(val)
